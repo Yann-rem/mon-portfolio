@@ -1,5 +1,7 @@
 import { FC, useRef } from "react";
 
+import styles from "./Navbar.module.css";
+
 const navLinks: { href: string; text: string }[] = [
   { href: "#home", text: "accueil" },
   { href: "#about", text: "à propos" },
@@ -14,7 +16,7 @@ const Navbar: FC = () => {
   const navLinkRefs = useRef<HTMLLIElement[]>([]);
 
   return (
-    <header>
+    <header className={styles["navbar"]}>
       <nav>
         <div>
           <ul>
