@@ -15,12 +15,12 @@ const Navbar: FC = () => {
   const navLinkRefs = useRef<HTMLLIElement[]>([]);
 
   return (
-    <header>
-      <nav>
-        <a href="#">
-          <Logo />
+    <header className="navbar">
+      <nav className="container-custom">
+        <a href="#" className="navbar__logo-wrapper">
+          <Logo className="navbar__logo" />
         </a>
-        <ul>
+        <ul className="navbar__nav">
           {navLinks.map(({ href, text }, index) => (
             <li
               key={index}
@@ -28,12 +28,16 @@ const Navbar: FC = () => {
                 navLinkRefs.current[index] = el!;
               }}
             >
-              <a href={href}>{text}</a>
+              <a href={href} className="navbar__nav-link">
+                {text}
+              </a>
             </li>
           ))}
         </ul>
-        <div>
-          <a href="#">Contact</a>
+        <div className="navbar__action">
+          <a href="#" className="navbar__contact-btn">
+            Contact
+          </a>
         </div>
       </nav>
     </header>
