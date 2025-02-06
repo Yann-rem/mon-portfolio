@@ -1,12 +1,33 @@
 @import "tailwindcss";
 
-@layer base {
-  html {
-    font-size: 16px;
-    scroll-behavior: smooth;
-  }
+@theme {
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+}
 
-  body {
-    @apply antialiased text-zinc-300 bg-zinc-900;
+@layer components {
+  .container-custom {
+    /* Largeur complète, marges automatiques pour centrer, et padding horizontal de 0.75rem */
+    @apply w-full mx-auto px-3;
+
+    /* Pour les écrans ≥ 576px, largeur maximale de 540px */
+    @apply sm:max-w-[540px];
+
+    /* Pour les écrans ≥ 768px, largeur maximale de 720px */
+    @apply md:max-w-[720px];
+
+    /* Pour les écrans ≥ 992px, largeur maximale de 960px */
+    @apply lg:max-w-[960px];
+
+    /* Pour les écrans ≥ 1200px, largeur maximale de 1140px */
+    @apply xl:max-w-[1140px];
+
+    /* Pour les écrans ≥ 1400px, largeur maximale de 1320px */
+    @apply 2xl:max-w-[1320px];
   }
 }
+
+@import "./components/navbar/Navbar.module.css";
