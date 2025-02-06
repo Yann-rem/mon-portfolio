@@ -1,5 +1,7 @@
 import { FC, useRef } from "react";
 
+import { Logo } from "./Icon";
+
 const navLinks: { href: string; text: string }[] = [
   { href: "#home", text: "accueil" },
   { href: "#about", text: "à propos" },
@@ -15,7 +17,9 @@ const Navbar: FC = () => {
   return (
     <header>
       <nav>
-        <a href="#">logo</a>
+        <a href="#">
+          <Logo />
+        </a>
         <ul>
           {navLinks.map(({ href, text }, index) => (
             <li
