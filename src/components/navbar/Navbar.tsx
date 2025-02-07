@@ -12,7 +12,7 @@ const navLinks: { href: string; text: string }[] = [
 const Navbar: FC = () => {
   console.debug("[Rendu] composant 'Navbar'");
 
-  const navLinkRefs = useRef<HTMLLIElement[]>([]);
+  const navLinksRefs = useRef<HTMLLIElement[]>([]);
 
   return (
     <header className="navbar">
@@ -25,7 +25,7 @@ const Navbar: FC = () => {
             <li
               key={index}
               ref={(el) => {
-                navLinkRefs.current[index] = el!;
+                navLinksRefs.current[index] = el!;
               }}
             >
               <a href={href} className="navbar__nav-link">
