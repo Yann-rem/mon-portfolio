@@ -12,6 +12,7 @@ const navLinks: { href: string; text: string }[] = [
 const Navbar: FC = () => {
   console.debug("[Rendu] composant 'Navbar'");
 
+  // Références pour les éléments de la liste de liens de navigation
   const navLinksRefs = useRef<HTMLLIElement[]>([]);
 
   return (
@@ -25,6 +26,7 @@ const Navbar: FC = () => {
             <li
               key={index}
               ref={(el) => {
+                // Stocke la référence de chaque élément de la liste de liens de navigation
                 navLinksRefs.current[index] = el!;
               }}
             >

@@ -22,6 +22,7 @@
   @apply flex px-4 py-2 whitespace-nowrap;
 }
 
+/* Style des liens de navigation au survol */
 .navbar__nav:hover .navbar__nav-link:not(:hover) {
   @apply opacity-50 transition-opacity;
 }
