@@ -31,3 +31,7 @@
 }
 
 @import "./components/navbar/Navbar.module.css";
+@import "./components/home/Home.css";
+@import "./components/about/About.css";
+@import "./components/skills/Skills.css";
+@import "./components/projects/Projects.css";
