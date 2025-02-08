@@ -28,6 +28,17 @@
     /* Pour les écrans ≥ 1400px, largeur maximale de 1320px */
     @apply 2xl:max-w-[1320px];
   }
+
+  .section {
+    /* Hauteur minimale de 100vh */
+    @apply min-h-screen;
+
+    /* Padding vertical de base de 5rem */
+    @apply py-20;
+
+    /* Pour les écrans ≥ 768px, padding vertical de 7.5rem */
+    @apply md:py-[7.5rem];
+  }
 }
 
 @import "./components/navbar/Navbar.module.css";
