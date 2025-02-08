@@ -1,0 +1,11 @@
+.hero__section {
+  /* Padding supérieur de :
+       - 5rem (padding de base)
+       - +4rem (hauteur de la navbar) */
+  @apply pt-[calc(5rem+4rem)];
+
+  /* Pour les écrans ≥ 768px, padding supérieur de :
+       - 7.5rem
+       - +4rem (hauteur de la navbar) */
+  @apply md:pt-[calc(7.5rem+4rem)];
+}
