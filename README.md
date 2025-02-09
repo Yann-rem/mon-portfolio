@@ -4,7 +4,7 @@ Bienvenue sur mon portfolio personnel ! Ce projet est réalisé avec **Vite**, *
 
 ## 🛠️ Technologies utilisées
 
-- **[React](https://reactjs.org/)** : Une bibliothèque JavaScript pour construire des interfaces utilisateur dynamiques et réactives.
+- **[React](https://react.dev/)** : Une bibliothèque JavaScript pour construire des interfaces utilisateur dynamiques et réactives.
 - **[TypeScript](https://www.typescriptlang.org/)** : Un sur-ensemble de JavaScript qui ajoute un typage statique et améliore la maintenabilité du code.
 - **[Tailwind CSS](https://tailwindcss.com/)** : Un framework CSS utilitaire pour un design rapide et flexible sans classes inutiles.
 - **[Framer Motion](https://www.framer.com/motion/)** : Une bibliothèque d'animations pour React, permettant des transitions fluides et modernes.
