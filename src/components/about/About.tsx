@@ -1,8 +1,8 @@
-import { FC } from "react";
+import { FC, Ref } from "react";
 
-const About: FC = () => {
+const About: FC<{ ref: Ref<HTMLElement> }> = ({ ref }) => {
   return (
-    <section id="about" className="section">
+    <section id="about" className="section" ref={ref}>
       <div className="container-custom"></div>
     </section>
   );
